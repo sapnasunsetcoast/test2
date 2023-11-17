@@ -1,0 +1,27 @@
+name: mocki
+port: 3000
+endpoints:
+  - path: /hello
+    method: get
+    responses:
+      - statusCode: 200
+        body:
+          message: Hello from Mocki Test!
+ - path: /fake
+      method: get
+      responses: 
+      - statusCode: 200
+        body:
+            firstName: !Fake firstName
+            lastName: !Fake lastName
+            email: !Fake email
+            address: !Fake streetAddress
+            phone: !Fake phoneNumber
+            createdAt: !Fake pastDate
+            company: !Fake company
+  - path: /hello2
+    method: get
+    responses:
+      - statusCode: 200
+        body:
+          message: Hello from Mocki2!
